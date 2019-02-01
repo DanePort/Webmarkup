@@ -1,6 +1,5 @@
 <html lang="en">
 <head>
-
 	<link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
@@ -20,11 +19,13 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" type="text/css" href="StylesheetIndex.css">
+	<link rel="stylesheet" type="text/css" href="Contact.css">
+	
 	<meta charset="utf-8">
 	<meta name="Webmarkup" content=>
 	<meta name="opdracht webmarkup" content=>
 	<meta name="Dane Portegies" content=>
-	
+
 	<title>Homepage</title>
 </head>
 
@@ -34,40 +35,63 @@
     </header>
 	
 	<nav class="center">
-		<a href="product.html">Products<a>
+		<a href="index.html">Home<a>
 		<a href="https://www.blogger.com">blog</a>
 		<a href="contact.html">Contact<a>
 	</nav>
-
-	<section class="center">
-		<span>we are</span>
-		<span>entertainment</span>
-	</section>
 	
-		<img src="images\product3.jpg" alt="Luigi, Yoshi, Mario" title="figurines" class="centerimage">
-	
-	<section class="center">
-		<span>mobile</span>
-		<span>games</span>
-	</section>
-	
-		<img src="images\product8.jpg" alt="mobile game" title="mobilegames" class="centerimage">
-		
-	<section class="center">
-		<span>mobile</span>
-		<span>games</span>
-	</section>
-	
-	<img src="images\product6.jpg" alt="pawns" title="boardgames" class="centerimage">
-	
-	<section class="center">
-		<span>console</span>
-		<span>games</span>
-	</section>
-	
-	<img src="images\product9.jpg" alt="controller" title="consolegames" class="centerimage">
-	
-	<footer class="center">2018 - Dane Portegies - Inholland</footer>
+	<header class="headerContact center">
+        <span>Contact</span>
+	</header>
 	
 
+<section class="contactForm">	
+
+	<h2 >More information</h2>
 	
+	<form action="nowhere.php" method="post" class="center">
+		<fieldset class="contactFormFieldset">
+			<label>Select topic</label>
+			
+			<section class="selector">
+				<select class="optionSelector">
+					<option value="general">General inquiries</option>
+					<option value="press">Press relations</option>
+					<option value="recruitement">Recruitement</option>
+				</select>
+			</section>
+		</fieldset>
+		<fieldset class="contactFormFieldset">
+			<input
+					type="text"
+					name="contactFormName"
+					placeholder="Your name.."
+			/>
+		</fieldset>
+		<fieldset class="contactFormFieldset">
+			<input
+					type="email"
+					name="email"
+					placeholder="Your email.."
+			/>
+		</fieldset>
+		<fieldset class="contactFormFieldset">
+			<textarea
+					rows="7"
+					cols="40"
+					name="message"
+					placeholder="Write something.."
+			></textarea>
+		</fieldset>
+		<input class="buttonContact center"
+				type="submit"
+				value="Submit"
+		/>
+	</form>
+
+</section>
+
+<footer class="center">2018 - Dane Portegies - Inholland</footer>
+
+</body>
+</html>
