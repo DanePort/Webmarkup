@@ -1,0 +1,40 @@
+.headerProduct{
+	background-color: #2699FB;
+	height: 100px;
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.whitespace {
+	background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+	text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.resizeImage {
+	border-left: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+	padding-bottom: 700;
+}
+
+.resizeImage figure {
+    height: 150px;
+    padding: 6px;
+	margin: 0;
+	position: relative;
+	z-index:1;
+}
+
+.resizeImage figure img {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+	border: 1px solid #AAAAAA;
+}
